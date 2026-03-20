@@ -32,6 +32,7 @@ dateparser==1.1.8
 decorator==5.2.1
 diskcache==5.6.3
 docopt==0.6.2
+edge-tts==7.2.7
 einops==0.8.2
 encodec==0.1.1
 filelock==3.25.2
@@ -54,7 +55,7 @@ hangul-romanize==0.1.0
 hf-xet==1.4.2
 httpcore==1.0.9
 httpx==0.28.1
-huggingface_hub==1.7.2
+huggingface_hub==0.36.2
 idna==3.11
 inflect==7.5.0
 itsdangerous==2.2.0
@@ -122,6 +123,7 @@ pysbd==0.3.4
 python-crfsuite==0.9.12
 python-dateutil==2.9.0.post0
 python-Levenshtein==0.27.3
+pyttsx3==2.99
 pytz==2026.1.post1
 PyYAML==6.0.3
 RapidFuzz==3.14.3
@@ -146,17 +148,18 @@ srt==3.5.3
 SudachiDict-core==20260116
 SudachiPy==0.6.10
 sympy==1.14.0
+tabulate==0.10.0
 tensorboard==2.20.0
 tensorboard-data-server==0.7.2
 tflite-runtime==2.14.0
 thinc==8.3.11
 threadpoolctl==3.6.0
-tokenizers==0.22.2
+tokenizers==0.19.1
 torch==2.10.0
 torchaudio==2.10.0
 tqdm==4.67.3
 trainer==0.0.36
-transformers==5.3.0
+transformers==4.40.0
 triton==3.6.0
 TTS==0.22.0
 typeguard==4.5.1
