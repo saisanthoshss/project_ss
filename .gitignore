@@ -1,0 +1,9 @@
+venv/
+models/
+tts_cache/
+recordings/
+__pycache__/
+*.pyc
+*.gguf
+*.onnx
+logs/
