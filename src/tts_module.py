@@ -3,6 +3,7 @@ import edge_tts
 import pygame
 import os
 import json
+import time
 
 # ── CONFIG ──────────────────────────────────────────────
 CACHE_DIR = "/mnt/d/project_ss/tts_cache"
@@ -41,12 +42,22 @@ async def generate_audio(text, language="telugu"):
 # ── PLAY AUDIO FILE ──────────────────────────────────────
 def play_audio(filepath):
     """Play an mp3 audio file through speakers"""
-    pygame.mixer.init()
-    pygame.mixer.music.load(filepath)
-    pygame.mixer.music.play()
-    while pygame.mixer.music.get_busy():
-        pygame.time.Clock().tick(10)
-    pygame.mixer.quit()
+    try:
+        pygame.mixer.init()
+        pygame.mixer.music.load(filepath)
+        pygame.mixer.music.play()
+        # Wait with timeout to prevent hanging
+        timeout = 30  # max 30 seconds
+        start = time.time()
+        while pygame.mixer.music.get_busy():
+            if time.time() - start > timeout:
+                print("[TTS] Playback timeout - stopping")
+                pygame.mixer.music.stop()
+                break
+            pygame.time.Clock().tick(10)
+        pygame.mixer.quit()
+    except Exception as e:
+        print(f"[TTS] Playback error: {e}")
 
 # ── MAIN SPEAK FUNCTION ──────────────────────────────────
 def speak(text, language=None):

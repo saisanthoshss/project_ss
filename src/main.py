@@ -41,30 +41,42 @@ def run():
     print("[MAIN] Chintu is ready!")
     speak("Namaskaram! Nenu Chintu. Meeru ela unnaru?", language)
 
-    print("\n[MAIN] Press ENTER to wake Chintu, Ctrl+C to stop\n")
+    print("\n[MAIN] Commands:")
+    print("  Press ENTER -> speak your question (voice mode)")
+    print("  Type your question and press ENTER -> text mode")
+    print("  Type 'quit' -> stop Chintu\n")
 
     while True:
         try:
-            # ── WAKE ─────────────────────────────────────
-            input("[MAIN] Press ENTER to start talking to Chintu...")
-            speak("Cheppandi!", language)
+            user_input = input("[MAIN] Press ENTER to speak OR type question: ").strip()
 
-            # ── LISTEN ───────────────────────────────────
-            print("[MAIN] Listening for your question...")
-            question = listen_and_transcribe("english", timeout=8)
+            if user_input.lower() == "quit":
+                speak("Bye bye!", language)
+                break
 
-            if not question:
-                speak("Meeru emi cheppaledu. Malli try cheyyandi!", language)
-                continue
+            # ── TEXT MODE ────────────────────────────────
+            if user_input:
+                question = user_input
+                print(f"[MAIN] Question (typed): {question}")
 
-            print(f"[MAIN] You said: {question}")
+            # ── VOICE MODE ───────────────────────────────
+            else:
+                speak("Cheppandi!", language)
+                print("[MAIN] Listening for your question...")
+                question = listen_and_transcribe("english", timeout=8)
+
+                if not question:
+                    speak("Meeru emi cheppaledu. Malli try cheyyandi!", language)
+                    continue
+
+                print(f"[MAIN] You said: {question}")
 
             # ── THINK ────────────────────────────────────
             print("[MAIN] Thinking...")
             response = ask_chintu(question, age, language)
 
             if not response:
-                response = "Naku artham kaledu. Malli cheppagalara?"
+                response = "Adhi manchhi prashna! Naku inka nerchukovaalanidi undhi!"
 
             # ── SPEAK ────────────────────────────────────
             speak(response, language)
@@ -76,7 +88,6 @@ def run():
 
         except Exception as e:
             print(f"[MAIN] Error: {e}")
-            state = STATE_SLEEP
             time.sleep(2)
 
 if __name__ == "__main__":
