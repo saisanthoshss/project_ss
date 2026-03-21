@@ -1,0 +1,24 @@
+{
+  "numbers": [
+    {"digit": 1, "english": "one", "telugu": "oka", "telugu_script": "ఒక"},
+    {"digit": 2, "english": "two", "telugu": "rendu", "telugu_script": "రెండు"},
+    {"digit": 3, "english": "three", "telugu": "moodu", "telugu_script": "మూడు"},
+    {"digit": 4, "english": "four", "telugu": "naalugu", "telugu_script": "నాలుగు"},
+    {"digit": 5, "english": "five", "telugu": "aidu", "telugu_script": "ఐదు"},
+    {"digit": 6, "english": "six", "telugu": "aaru", "telugu_script": "ఆరు"},
+    {"digit": 7, "english": "seven", "telugu": "edu", "telugu_script": "ఏడు"},
+    {"digit": 8, "english": "eight", "telugu": "enimidi", "telugu_script": "ఎనిమిది"},
+    {"digit": 9, "english": "nine", "telugu": "tommidi", "telugu_script": "తొమ్మిది"},
+    {"digit": 10, "english": "ten", "telugu": "padi", "telugu_script": "పది"},
+    {"digit": 11, "english": "eleven", "telugu": "padakondu", "telugu_script": "పదకొండు"},
+    {"digit": 12, "english": "twelve", "telugu": "pannendu", "telugu_script": "పన్నెండు"},
+    {"digit": 13, "english": "thirteen", "telugu": "padammoodu", "telugu_script": "పదమూడు"},
+    {"digit": 14, "english": "fourteen", "telugu": "padanaalugu", "telugu_script": "పదనాలుగు"},
+    {"digit": 15, "english": "fifteen", "telugu": "padaihidu", "telugu_script": "పదిహేను"},
+    {"digit": 16, "english": "sixteen", "telugu": "padahaaru", "telugu_script": "పదహారు"},
+    {"digit": 17, "english": "seventeen", "telugu": "padahedu", "telugu_script": "పదిహేడు"},
+    {"digit": 18, "english": "eighteen", "telugu": "padhenimidi", "telugu_script": "పద్దెనిమిది"},
+    {"digit": 19, "english": "nineteen", "telugu": "padombhai", "telugu_script": "పందొమ్మిది"},
+    {"digit": 20, "english": "twenty", "telugu": "iruvai", "telugu_script": "ఇరవై"}
+  ]
+}

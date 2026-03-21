@@ -1,0 +1,136 @@
+{
+  "animals": [
+    {
+      "english": "cow",
+      "telugu": "aavu",
+      "telugu_script": "ఆవు",
+      "sound_english": "moo",
+      "sound_telugu": "amba",
+      "gives": "milk",
+      "type": "domestic",
+      "fun_fact_english": "Cow gives us milk",
+      "fun_fact_telugu": "Aavu manaku palu istundi"
+    },
+    {
+      "english": "dog",
+      "telugu": "kukka",
+      "telugu_script": "కుక్క",
+      "sound_english": "woof",
+      "sound_telugu": "bau bau",
+      "gives": "protection",
+      "type": "domestic",
+      "fun_fact_english": "Dog is our best friend",
+      "fun_fact_telugu": "Kukka manaku manchhi snehithudu"
+    },
+    {
+      "english": "cat",
+      "telugu": "pilli",
+      "telugu_script": "పిల్లి",
+      "sound_english": "meow",
+      "sound_telugu": "meow",
+      "gives": "companionship",
+      "type": "domestic",
+      "fun_fact_english": "Cat sleeps a lot",
+      "fun_fact_telugu": "Pilli chala nidra potundi"
+    },
+    {
+      "english": "elephant",
+      "telugu": "enugu",
+      "telugu_script": "ఏనుగు",
+      "sound_english": "trumpet",
+      "sound_telugu": "brrr",
+      "gives": "strength",
+      "type": "wild",
+      "fun_fact_english": "Elephant is the biggest land animal",
+      "fun_fact_telugu": "Enugu bhumi meeda anni jeevulalo pedda di"
+    },
+    {
+      "english": "lion",
+      "telugu": "simham",
+      "telugu_script": "సింహం",
+      "sound_english": "roar",
+      "sound_telugu": "garjana",
+      "gives": "courage",
+      "type": "wild",
+      "fun_fact_english": "Lion is the king of the jungle",
+      "fun_fact_telugu": "Simham adaviki raja"
+    },
+    {
+      "english": "tiger",
+      "telugu": "puli",
+      "telugu_script": "పులి",
+      "sound_english": "growl",
+      "sound_telugu": "grrr",
+      "gives": "speed",
+      "type": "wild",
+      "fun_fact_english": "Tiger has stripes on its body",
+      "fun_fact_telugu": "Puli shareeramu meeda poshalu untayi"
+    },
+    {
+      "english": "monkey",
+      "telugu": "kapi",
+      "telugu_script": "కపి",
+      "sound_english": "ook ook",
+      "sound_telugu": "ook ook",
+      "gives": "playfulness",
+      "type": "wild",
+      "fun_fact_english": "Monkey loves bananas",
+      "fun_fact_telugu": "Kapi aratipandlu chala istapadutundi"
+    },
+    {
+      "english": "parrot",
+      "telugu": "chiluka",
+      "telugu_script": "చిలుక",
+      "sound_english": "squawk",
+      "sound_telugu": "squawk",
+      "gives": "speech",
+      "type": "bird",
+      "fun_fact_english": "Parrot can talk like humans",
+      "fun_fact_telugu": "Chiluka manushula laaga matladutundi"
+    },
+    {
+      "english": "peacock",
+      "telugu": "navili",
+      "telugu_script": "నవిలి",
+      "sound_english": "meow like cry",
+      "sound_telugu": "kekekeke",
+      "gives": "beauty",
+      "type": "bird",
+      "fun_fact_english": "Peacock is India's national bird",
+      "fun_fact_telugu": "Navili mana desa pakshi"
+    },
+    {
+      "english": "fish",
+      "telugu": "chepa",
+      "telugu_script": "చేప",
+      "sound_english": "silent",
+      "sound_telugu": "nillu nillu",
+      "gives": "food",
+      "type": "water",
+      "fun_fact_english": "Fish lives in water",
+      "fun_fact_telugu": "Chepa neellalo nivisthundi"
+    },
+    {
+      "english": "frog",
+      "telugu": "kooka",
+      "telugu_script": "కూక",
+      "sound_english": "ribbit",
+      "sound_telugu": "bok bok",
+      "gives": "rain sign",
+      "type": "water",
+      "fun_fact_english": "Frog jumps high",
+      "fun_fact_telugu": "Kooka chala etkalu dumputhundi"
+    },
+    {
+      "english": "butterfly",
+      "telugu": "srikaaram",
+      "telugu_script": "శ్రీకారం",
+      "sound_english": "silent",
+      "sound_telugu": "silent",
+      "gives": "beauty",
+      "type": "insect",
+      "fun_fact_english": "Butterfly has colourful wings",
+      "fun_fact_telugu": "Srikaaram ki rengu rengu rekkalu untayi"
+    }
+  ]
+}

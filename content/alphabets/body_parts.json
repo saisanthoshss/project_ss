@@ -1,0 +1,83 @@
+{
+  "body_parts": [
+    {
+      "english": "head",
+      "telugu": "tala",
+      "telugu_script": "తల",
+      "function_english": "We think with our head",
+      "function_telugu": "Talo manchham alochisthamu"
+    },
+    {
+      "english": "eyes",
+      "telugu": "kallu",
+      "telugu_script": "కళ్ళు",
+      "count": 2,
+      "function_english": "We see with our eyes",
+      "function_telugu": "Kallato choosthamu"
+    },
+    {
+      "english": "ears",
+      "telugu": "chevulu",
+      "telugu_script": "చెవులు",
+      "count": 2,
+      "function_english": "We hear with our ears",
+      "function_telugu": "Chevulato vinathamu"
+    },
+    {
+      "english": "nose",
+      "telugu": "mukkhu",
+      "telugu_script": "ముక్కు",
+      "count": 1,
+      "function_english": "We smell with our nose",
+      "function_telugu": "Mukkutho vasana choosthamu"
+    },
+    {
+      "english": "mouth",
+      "telugu": "nooru",
+      "telugu_script": "నోరు",
+      "count": 1,
+      "function_english": "We eat and talk with our mouth",
+      "function_telugu": "Nooruto tinthamu matladuthamu"
+    },
+    {
+      "english": "hands",
+      "telugu": "chethulu",
+      "telugu_script": "చేతులు",
+      "count": 2,
+      "function_english": "We hold things with our hands",
+      "function_telugu": "Chetulato vastuvulu pattukuntamu"
+    },
+    {
+      "english": "fingers",
+      "telugu": "vrelylu",
+      "telugu_script": "వేళ్ళు",
+      "count": 10,
+      "function_english": "We have 10 fingers total",
+      "function_telugu": "Manaku mottham padi vrelylu untayi"
+    },
+    {
+      "english": "legs",
+      "telugu": "kaalu",
+      "telugu_script": "కాళ్ళు",
+      "count": 2,
+      "function_english": "We walk with our legs",
+      "function_telugu": "Kaalato nadusthamu"
+    },
+    {
+      "english": "stomach",
+      "telugu": "pelaka",
+      "telugu_script": "పొట్ట",
+      "count": 1,
+      "function_english": "Food goes into our stomach",
+      "function_telugu": "Tinna tarindam pelakalo veltundi"
+    },
+    {
+      "english": "heart",
+      "telugu": "gundhe",
+      "telugu_script": "గుండె",
+      "count": 1,
+      "function_english": "Heart pumps blood in our body",
+      "function_telugu": "Gundhe manamu lantadaniki sahayapadutundi"
+    }
+  ]
+}

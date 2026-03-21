@@ -1,0 +1,100 @@
+{
+  "colours": [
+    {
+      "english": "red",
+      "telugu": "erra",
+      "telugu_script": "ఎర్ర",
+      "example_english": "Apple is red",
+      "example_telugu": "Apple erra ga untundi",
+      "hex": "#FF0000"
+    },
+    {
+      "english": "blue",
+      "telugu": "neela",
+      "telugu_script": "నీల",
+      "example_english": "Sky is blue",
+      "example_telugu": "Aakasam neela ga untundi",
+      "hex": "#0000FF"
+    },
+    {
+      "english": "green",
+      "telugu": "pachi",
+      "telugu_script": "పచ్చ",
+      "example_english": "Grass is green",
+      "example_telugu": "Gaddi pachi ga untundi",
+      "hex": "#00FF00"
+    },
+    {
+      "english": "yellow",
+      "telugu": "peetha",
+      "telugu_script": "పీత",
+      "example_english": "Sun is yellow",
+      "example_telugu": "Suryanuddu peetha ga untundi",
+      "hex": "#FFFF00"
+    },
+    {
+      "english": "white",
+      "telugu": "tella",
+      "telugu_script": "తెల్ల",
+      "example_english": "Milk is white",
+      "example_telugu": "Palu tella ga untundi",
+      "hex": "#FFFFFF"
+    },
+    {
+      "english": "black",
+      "telugu": "nalla",
+      "telugu_script": "నల్ల",
+      "example_english": "Night sky is black",
+      "example_telugu": "Raatri aakasam nalla ga untundi",
+      "hex": "#000000"
+    },
+    {
+      "english": "orange",
+      "telugu": "narinja",
+      "telugu_script": "నారింజ",
+      "example_english": "Orange fruit is orange",
+      "example_telugu": "Narinja pandu narinja rengu ga untundi",
+      "hex": "#FFA500"
+    },
+    {
+      "english": "pink",
+      "telugu": "gulabi",
+      "telugu_script": "గులాబి",
+      "example_english": "Rose is pink",
+      "example_telugu": "Gulab puvvu gulabi ga untundi",
+      "hex": "#FFC0CB"
+    },
+    {
+      "english": "purple",
+      "telugu": "jamuni",
+      "telugu_script": "జామున",
+      "example_english": "Grapes are purple",
+      "example_telugu": "Draksha pandu jamuni ga untundi",
+      "hex": "#800080"
+    },
+    {
+      "english": "brown",
+      "telugu": "avise",
+      "telugu_script": "అవిసె",
+      "example_english": "Mud is brown",
+      "example_telugu": "Boru avise ga untundi",
+      "hex": "#A52A2A"
+    },
+    {
+      "english": "grey",
+      "telugu": "baada",
+      "telugu_script": "బాద",
+      "example_english": "Clouds are grey",
+      "example_telugu": "Meghalu baada ga untundi",
+      "hex": "#808080"
+    },
+    {
+      "english": "golden",
+      "telugu": "banga",
+      "telugu_script": "బంగ",
+      "example_english": "Gold is golden",
+      "example_telugu": "Bangaram banga ga untundi",
+      "hex": "#FFD700"
+    }
+  ]
+}
