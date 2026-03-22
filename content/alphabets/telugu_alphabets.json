@@ -1,0 +1,42 @@
+{
+  "telugu_vowels": [
+    {"letter": "అ", "romanized": "a", "word": "అమ్మ", "word_meaning": "Mother"},
+    {"letter": "ఆ", "romanized": "aa", "word": "ఆవు", "word_meaning": "Cow"},
+    {"letter": "ఇ", "romanized": "i", "word": "ఇల్లు", "word_meaning": "House"},
+    {"letter": "ఈ", "romanized": "ee", "word": "ఈగ", "word_meaning": "Fly"},
+    {"letter": "ఉ", "romanized": "u", "word": "ఉప్పు", "word_meaning": "Salt"},
+    {"letter": "ఊ", "romanized": "oo", "word": "ఊర", "word_meaning": "Village"},
+    {"letter": "ఎ", "romanized": "e", "word": "ఎలుక", "word_meaning": "Mouse"},
+    {"letter": "ఏ", "romanized": "ae", "word": "ఏనుగు", "word_meaning": "Elephant"},
+    {"letter": "ఐ", "romanized": "ai", "word": "ఐదు", "word_meaning": "Five"},
+    {"letter": "ఒ", "romanized": "o", "word": "ఒంట", "word_meaning": "Camel"},
+    {"letter": "ఓ", "romanized": "oa", "word": "ఓడ", "word_meaning": "Ship"},
+    {"letter": "ఔ", "romanized": "au", "word": "ఔషధం", "word_meaning": "Medicine"}
+  ],
+  "telugu_consonants": [
+    {"letter": "క", "romanized": "ka", "word": "కాకి", "word_meaning": "Crow"},
+    {"letter": "ఖ", "romanized": "kha", "word": "ఖర్జూరం", "word_meaning": "Date fruit"},
+    {"letter": "గ", "romanized": "ga", "word": "గుర్రం", "word_meaning": "Horse"},
+    {"letter": "ఘ", "romanized": "gha", "word": "ఘంట", "word_meaning": "Bell"},
+    {"letter": "చ", "romanized": "cha", "word": "చేప", "word_meaning": "Fish"},
+    {"letter": "జ", "romanized": "ja", "word": "జింక", "word_meaning": "Deer"},
+    {"letter": "ట", "romanized": "ta", "word": "టమాట", "word_meaning": "Tomato"},
+    {"letter": "డ", "romanized": "da", "word": "డబ్బు", "word_meaning": "Money"},
+    {"letter": "త", "romanized": "tha", "word": "తల", "word_meaning": "Head"},
+    {"letter": "ద", "romanized": "dha", "word": "దారి", "word_meaning": "Road"},
+    {"letter": "న", "romanized": "na", "word": "నది", "word_meaning": "River"},
+    {"letter": "ప", "romanized": "pa", "word": "పాము", "word_meaning": "Snake"},
+    {"letter": "బ", "romanized": "ba", "word": "బాతు", "word_meaning": "Duck"},
+    {"letter": "భ", "romanized": "bha", "word": "భూమి", "word_meaning": "Earth"},
+    {"letter": "మ", "romanized": "ma", "word": "మామిడి", "word_meaning": "Mango"},
+    {"letter": "య", "romanized": "ya", "word": "యాపిల్", "word_meaning": "Apple"},
+    {"letter": "ర", "romanized": "ra", "word": "రైలు", "word_meaning": "Train"},
+    {"letter": "ల", "romanized": "la", "word": "లేడి", "word_meaning": "Deer"},
+    {"letter": "వ", "romanized": "va", "word": "వంట", "word_meaning": "Cooking"},
+    {"letter": "శ", "romanized": "sha", "word": "శుభం", "word_meaning": "Auspicious"},
+    {"letter": "స", "romanized": "sa", "word": "సూర్యుడు", "word_meaning": "Sun"},
+    {"letter": "హ", "romanized": "ha", "word": "హంస", "word_meaning": "Swan"},
+    {"letter": "ళ", "romanized": "la", "word": "ళాయి", "word_meaning": ""},
+    {"letter": "క్ష", "romanized": "ksha", "word": "క్షమించు", "word_meaning": "Forgive"}
+  ]
+}

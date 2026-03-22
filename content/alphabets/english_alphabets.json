@@ -1,0 +1,30 @@
+{
+  "english_alphabets": [
+    {"letter": "A", "telugu_sound": "Ei", "word_english": "Apple", "word_telugu": "Apple erra ga untundi"},
+    {"letter": "B", "telugu_sound": "Bi", "word_english": "Ball", "word_telugu": "Ball tho aadukuntamu"},
+    {"letter": "C", "telugu_sound": "Si", "word_english": "Cat", "word_telugu": "Pilli meow antundi"},
+    {"letter": "D", "telugu_sound": "Di", "word_english": "Dog", "word_telugu": "Kukka bau bau antundi"},
+    {"letter": "E", "telugu_sound": "Ee", "word_english": "Elephant", "word_telugu": "Enugu pedda ga untundi"},
+    {"letter": "F", "telugu_sound": "Ef", "word_english": "Fish", "word_telugu": "Chepa neellalo untundi"},
+    {"letter": "G", "telugu_sound": "Ji", "word_english": "Grapes", "word_telugu": "Draksha pandu chala ruchiga untundi"},
+    {"letter": "H", "telugu_sound": "Eich", "word_english": "House", "word_telugu": "Illu manamu nivisthamu"},
+    {"letter": "I", "telugu_sound": "Ai", "word_english": "Ice cream", "word_telugu": "Ice cream challa ga untundi"},
+    {"letter": "J", "telugu_sound": "Je", "word_english": "Jug", "word_telugu": "Jug lo neellu poskuntamu"},
+    {"letter": "K", "telugu_sound": "Ke", "word_english": "Kite", "word_telugu": "Patam gaali lo egaratundi"},
+    {"letter": "L", "telugu_sound": "El", "word_english": "Lion", "word_telugu": "Simham adaviki raja"},
+    {"letter": "M", "telugu_sound": "Em", "word_english": "Mango", "word_telugu": "Mamidi pandu chala tiyyaga untundi"},
+    {"letter": "N", "telugu_sound": "En", "word_english": "Nest", "word_telugu": "Pakshi gudu lo nivisthundi"},
+    {"letter": "O", "telugu_sound": "Oh", "word_english": "Orange", "word_telugu": "Narinja pandu narinja rengu ga untundi"},
+    {"letter": "P", "telugu_sound": "Pi", "word_english": "Parrot", "word_telugu": "Chiluka manushula laaga matladutundi"},
+    {"letter": "Q", "telugu_sound": "Kyu", "word_english": "Queen", "word_telugu": "Queen raani"},
+    {"letter": "R", "telugu_sound": "Ar", "word_english": "Rose", "word_telugu": "Gulab puvvu chala andanga untundi"},
+    {"letter": "S", "telugu_sound": "Es", "word_english": "Sun", "word_telugu": "Suryanuddu veligimpi istunnadu"},
+    {"letter": "T", "telugu_sound": "Ti", "word_english": "Tiger", "word_telugu": "Puli adavilo nivisthundi"},
+    {"letter": "U", "telugu_sound": "Yu", "word_english": "Umbrella", "word_telugu": "Gada varsham lo upayogapadutundi"},
+    {"letter": "V", "telugu_sound": "Vi", "word_english": "Van", "word_telugu": "Van lo prayanistandamu"},
+    {"letter": "W", "telugu_sound": "Dabelyu", "word_english": "Water", "word_telugu": "Neellu taaganiki upayogapadutaayi"},
+    {"letter": "X", "telugu_sound": "Eks", "word_english": "Xylophone", "word_telugu": "Xylophone oka vadya paakaranam"},
+    {"letter": "Y", "telugu_sound": "Wai", "word_english": "Yak", "word_telugu": "Yak oka jeevi"},
+    {"letter": "Z", "telugu_sound": "Zi", "word_english": "Zebra", "word_telugu": "Zebra ki nalla tella poshalu untaayi"}
+  ]
+}

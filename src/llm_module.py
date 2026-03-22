@@ -139,7 +139,36 @@ def ask_chintu(question, age=3, language="telugu"):
             return "Mana shareeram lo tala, kallu, chevulu, mukkhu, nooru, chethulu, kaalu untaayi!"
         else:
             return "Our body has head, eyes, ears, nose, mouth, hands and legs!"
+    elif topic == "alphabet_english" and data:
+        if language == "telugu":
+            return f"{data['letter']} ante {data['word_english']}! Telugu lo: {data['word_telugu']}"
+        else:
+            return f"{data['letter']} is for {data['word_english']}! {data['word_telugu']}"
 
+    elif topic == "alphabet_general":
+        if language == "telugu":
+            return "A ante Apple, B ante Ball, C ante Cat! English lo 26 aksharalu untaayi!"
+        else:
+            return "A for Apple, B for Ball, C for Cat! There are 26 letters in English!"
+
+    elif topic == "greeting_specific" and data:
+        if language == "telugu":
+            return f"'{data['english']}' ni Telugu lo '{data['telugu']}' antaaru. {data['when_to_use_telugu']}!"
+        else:
+            return f"'{data['english']}' in Telugu is '{data['telugu']}'. {data['when_to_use']}!"
+
+    elif topic == "mantra_specific" and data:
+        first_line = data['lines'][0]
+        if language == "telugu":
+            return f"{data['name']} mantramu cheppadam manchhidi! '{first_line['text']}' - artham: {first_line['meaning_telugu']}!"
+        else:
+            return f"{data['name']} is a beautiful mantra! '{first_line['text']}' means {first_line['meaning_english']}!"
+
+    elif topic == "mantra_general":
+        if language == "telugu":
+            return "Mantralu cheppadam chala manchhidi! Om, Om Namah Shivaya, Gayatri Mantra - anni manchi mantralu!"
+        else:
+            return "Mantras are wonderful! Om, Om Namah Shivaya, Gayatri Mantra - all beautiful prayers!"
     # ── LLM for unknown topics ────────────────────────────
     llm    = load_model()
     system = build_system_prompt(age, language)

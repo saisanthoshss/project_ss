@@ -12,7 +12,20 @@ def load_json(filepath):
 # ── CONTENT LOADERS ──────────────────────────────────────
 def get_colours():
     return load_json(f"{CONTENT_DIR}/colours/colours.json")["colours"]
+def get_english_alphabets():
+    return load_json(f"{CONTENT_DIR}/alphabets/english_alphabets.json")["english_alphabets"]
 
+def get_telugu_vowels():
+    return load_json(f"{CONTENT_DIR}/alphabets/telugu_alphabets.json")["telugu_vowels"]
+
+def get_telugu_consonants():
+    return load_json(f"{CONTENT_DIR}/alphabets/telugu_alphabets.json")["telugu_consonants"]
+
+def get_greetings():
+    return load_json(f"{CONTENT_DIR}/greetings/greetings.json")["greetings"]
+
+def get_mantras():
+    return load_json(f"{CONTENT_DIR}/mantras/mantras.json")["mantras"]
 def get_animals():
     return load_json(f"{CONTENT_DIR}/animals/animals.json")["animals"]
 
@@ -56,6 +69,40 @@ def find_body_part(query):
         if query in b["english"].lower() or query in b["telugu"].lower():
             return b
     return None
+def find_alphabet_english(query):
+    """Find English alphabet by letter"""
+    query = query.upper().strip()
+    for a in get_english_alphabets():
+        if a["letter"] == query:
+            return a
+    return None
+
+def find_alphabet_telugu(query):
+    """Find Telugu alphabet by romanized form"""
+    query = query.lower().strip()
+    for v in get_telugu_vowels():
+        if query == v["romanized"] or query in v["word"].lower():
+            return v
+    for c in get_telugu_consonants():
+        if query == c["romanized"] or query in c["word"].lower():
+            return c
+    return None
+
+def find_greeting(query):
+    """Find greeting by English or Telugu word"""
+    query = query.lower()
+    for g in get_greetings():
+        if query in g["english"].lower() or query in g["telugu"].lower():
+            return g
+    return None
+
+def find_mantra(query):
+    """Find mantra by name"""
+    query = query.lower()
+    for m in get_mantras():
+        if query in m["name"].lower() or query in m["telugu_name"].lower():
+            return m
+    return None
 
 # ── DETECT TOPIC ─────────────────────────────────────────
 def detect_topic(question):
@@ -78,7 +125,7 @@ def detect_topic(question):
             return "colour_general", get_colours()
 
     # Check for animal keywords
-    animal_words = ["animal", "jeevula", "sound", "say", "antundi",
+    animal_words = ["animal", "jeevula", "sound", "antundi",
                     "cow", "dog", "cat", "lion", "tiger", "elephant",
                     "aavu", "kukka", "pilli", "simham", "puli", "enugu"]
     for word in animal_words:
@@ -134,7 +181,60 @@ def detect_topic(question):
                 if b["english"] in q or b["telugu"] in q:
                     return "body_specific", b
             return "body_general", get_body_parts()
+    # Check for alphabet keywords
+    alpha_words = ["alphabet", "letter", "aksharam", "aksharalu",
+                   "telugu letter", "english letter", "a for", "b for"]
+    for word in alpha_words:
+        if word in q:
+            # Check for specific letter
+            for letter in "abcdefghijklmnopqrstuvwxyz":
+                if f" {letter} " in f" {q} " or q.startswith(f"{letter} ") or q.endswith(f" {letter}"):
+                    result = find_alphabet_english(letter.upper())
+                    if result:
+                        return "alphabet_english", result
+            return "alphabet_general", get_english_alphabets()[:5]
 
+    # Check for greeting keywords
+    # Check for greeting keywords — check BEFORE animals
+    greeting_words = ["thank you", "thank", "namaskaram", "dhanyavaadalu",
+                      "please", "dayachesi", "sorry", "kshaminchaandi",
+                      "good morning", "good night", "subhodayam",
+                      "how do you say hello", "how do you say thank",
+                      "how do you say please", "how do you say sorry"]
+    for word in greeting_words:
+        if word in q:
+            result = find_greeting(word.split()[0] if len(word.split()) > 1 else word)
+            if result:
+                return "greeting_specific", result
+            return "greeting_general", get_greetings()
+    for word in greeting_words:
+        if word in q:
+            result = find_greeting(word)
+            if result:
+                return "greeting_specific", result
+            return "greeting_general", get_greetings()
+
+    # Check for mantra keywords
+    # Special case for Om
+    if "om mantra" in q or "tell me about om" in q or q.strip() == "om":
+        result = find_mantra("om")
+        if result:
+            return "mantra_specific", result
+
+    mantra_words = ["mantra", "prayer", "gayatri", "saraswati",
+                    "shiva", "namah", "lullaby", "laali", "puja",
+                    "om namah", "tell me about om", "what is om"]
+    # Special case for Om alone
+    if q.strip() in ["om", "tell me about om", "what is om mantra", "om mantra"]:
+        result = find_mantra("om")
+        if result:
+            return "mantra_specific", result
+    for word in mantra_words:
+        if word in q:
+            result = find_mantra(word)
+            if result:
+                return "mantra_specific", result
+            return "mantra_general", get_mantras()
     return "unknown", None
 
 # ── BUILD CONTEXT FOR LLM ────────────────────────────────
@@ -181,7 +281,27 @@ def get_context(question, language="telugu"):
     elif topic == "body_general":
         parts_str = ", ".join([f"{b['english']}={b['telugu']}" for b in data[:5]])
         return f"FACT: Body parts in Telugu: {parts_str}"
+    elif topic == "alphabet_english" and data:
+        return f"FACT: Letter {data['letter']} is for {data['word_english']}. In Telugu: {data['word_telugu']}"
 
+    elif topic == "alphabet_general":
+        return "FACT: English alphabets go from A to Z. A for Apple, B for Ball, C for Cat!"
+
+    elif topic == "greeting_specific" and data:
+        if language == "telugu":
+            return f"FACT: '{data['english']}' ni Telugu lo '{data['telugu']}' antaaru. {data['when_to_use_telugu']}."
+        else:
+            return f"FACT: '{data['english']}' in Telugu is '{data['telugu']}'. Use it: {data['when_to_use']}."
+
+    elif topic == "mantra_specific" and data:
+        first_line = data['lines'][0]
+        if language == "telugu":
+            return f"FACT: {data['name']} mantramu: '{first_line['text']}'. Artham: {first_line['meaning_telugu']}. {data['significance_telugu']}"
+        else:
+            return f"FACT: {data['name']} mantra: '{first_line['text']}'. Meaning: {first_line['meaning_english']}. {data['significance_english']}"
+
+    elif topic == "mantra_general":
+        return "FACT: Important mantras are Om, Om Namah Shivaya, Gayatri Mantra, and Saraswati Vandana."
     return ""
 
 # ── TEST ─────────────────────────────────────────────────
@@ -191,11 +311,14 @@ if __name__ == "__main__":
 
     test_questions = [
         "What sound does a cow make?",
-        "What colour is the sky?",
-        "How many fingers do I have?",
-        "What is lion called in Telugu?",
         "What colour is red in Telugu?",
+        "How many fingers do I have?",
+        "What is letter A for?",
+        "How do you say thank you in Telugu?",
+        "Tell me about Om mantra",
+        "What is Saraswati Vandana?",
     ]
+    
 
     for q in test_questions:
         context = get_context(q, "telugu")

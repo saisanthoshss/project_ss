@@ -1,0 +1,74 @@
+{
+  "greetings": [
+    {
+      "english": "hello",
+      "telugu": "namaskaram",
+      "telugu_script": "నమస్కారం",
+      "when_to_use": "When meeting someone",
+      "when_to_use_telugu": "Ela unnaru ani adugutaamu"
+    },
+    {
+      "english": "good morning",
+      "telugu": "subhodayam",
+      "telugu_script": "శుభోదయం",
+      "when_to_use": "In the morning",
+      "when_to_use_telugu": "Udayam pooddu"
+    },
+    {
+      "english": "good night",
+      "telugu": "subha ratri",
+      "telugu_script": "శుభ రాత్రి",
+      "when_to_use": "Before sleeping",
+      "when_to_use_telugu": "Nidra poye mundu"
+    },
+    {
+      "english": "thank you",
+      "telugu": "dhanyavaadalu",
+      "telugu_script": "ధన్యవాదాలు",
+      "when_to_use": "When someone helps you",
+      "when_to_use_telugu": "Ellavaru sahayam chestinapudu"
+    },
+    {
+      "english": "please",
+      "telugu": "dayachesi",
+      "telugu_script": "దయచేసి",
+      "when_to_use": "When asking for something politely",
+      "when_to_use_telugu": "Emi adugutaamu"
+    },
+    {
+      "english": "sorry",
+      "telugu": "kshaminchaandi",
+      "telugu_script": "క్షమించండి",
+      "when_to_use": "When you make a mistake",
+      "when_to_use_telugu": "Tappu chestinapudu"
+    },
+    {
+      "english": "yes",
+      "telugu": "avunu",
+      "telugu_script": "అవును",
+      "when_to_use": "When agreeing",
+      "when_to_use_telugu": "Oppukone tapudu"
+    },
+    {
+      "english": "no",
+      "telugu": "kadu",
+      "telugu_script": "కాదు",
+      "when_to_use": "When disagreeing",
+      "when_to_use_telugu": "Oppokonetapudu"
+    },
+    {
+      "english": "come here",
+      "telugu": "ikkadiki raandi",
+      "telugu_script": "ఇక్కడికి రండి",
+      "when_to_use": "Calling someone",
+      "when_to_use_telugu": "Ela rippinapudu"
+    },
+    {
+      "english": "well done",
+      "telugu": "shabash",
+      "telugu_script": "శభాష్",
+      "when_to_use": "When praising someone",
+      "when_to_use_telugu": "Ellavaru manchhi panichestinapudu"
+    }
+  ]
+}

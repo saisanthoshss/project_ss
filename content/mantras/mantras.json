@@ -1,0 +1,154 @@
+{
+  "mantras": [
+    {
+      "name": "Om",
+      "telugu_name": "ఓం",
+      "lines": [
+        {
+          "line_number": 1,
+          "text": "Om",
+          "telugu_text": "ఓం",
+          "meaning_english": "The universal sound — the sound of creation",
+          "meaning_telugu": "Srusti dhvani — anni lokala mula dhvani"
+        }
+      ],
+      "significance_english": "Om is the most sacred sound in Hindu tradition. Chanting Om brings peace and focus.",
+      "significance_telugu": "Om anni mantraalalo mukhyamainadhi. Om palikilhe manassu shantigaa untundi.",
+      "age_minimum": 1
+    },
+    {
+      "name": "Saraswati Vandana",
+      "telugu_name": "సరస్వతీ వందన",
+      "lines": [
+        {
+          "line_number": 1,
+          "text": "Ya Kundendu Tusharahara Dhavala",
+          "telugu_text": "యా కుందేందు తుషారహార ధవళా",
+          "meaning_english": "She who is white like jasmine and moon",
+          "meaning_telugu": "Mallela laaga, chandrudu laaga telupu ga unnadi"
+        },
+        {
+          "line_number": 2,
+          "text": "Ya Shubhra Vastravrita",
+          "telugu_text": "యా శుభ్రవస్త్రావృతా",
+          "meaning_english": "She who is dressed in pure white garments",
+          "meaning_telugu": "Tella vastram dhariinchina deevi"
+        },
+        {
+          "line_number": 3,
+          "text": "Ya Veena Varadanda Manditakara",
+          "telugu_text": "యా వీణావరదండమండితకరా",
+          "meaning_english": "She who holds the veena in her hands",
+          "meaning_telugu": "Chetullo veena patti unnadi"
+        },
+        {
+          "line_number": 4,
+          "text": "Ya Shveta Padmasana",
+          "telugu_text": "యా శ్వేతపద్మాసనా",
+          "meaning_english": "She who sits on a white lotus",
+          "meaning_telugu": "Tella tamara meeda kuruchunnadi"
+        }
+      ],
+      "significance_english": "Saraswati is the goddess of learning, music, and wisdom. This prayer is recited before studying.",
+      "significance_telugu": "Saraswati devi vidhya, sangeetam, gnananiki devata. Chaduvukunna mundu ee mantramu cheppaali.",
+      "age_minimum": 3
+    },
+    {
+      "name": "Om Namah Shivaya",
+      "telugu_name": "ఓం నమః శివాయ",
+      "lines": [
+        {
+          "line_number": 1,
+          "text": "Om Namah Shivaya",
+          "telugu_text": "ఓం నమః శివాయ",
+          "meaning_english": "I bow to Lord Shiva",
+          "meaning_telugu": "Shivuniki namaskaram chestunaanu"
+        },
+        {
+          "line_number": 2,
+          "text": "Om Namah Shivaya",
+          "telugu_text": "ఓం నమః శివాయ",
+          "meaning_english": "I bow to Lord Shiva again",
+          "meaning_telugu": "Malli Shivuniki namaskaram"
+        },
+        {
+          "line_number": 3,
+          "text": "Om Namah Shivaya",
+          "telugu_text": "ఓం నమః శివాయ",
+          "meaning_english": "With full devotion I bow to Lord Shiva",
+          "meaning_telugu": "Bhaktitho Shivuniki namaskaram"
+        }
+      ],
+      "significance_english": "One of the most powerful mantras dedicated to Lord Shiva. Brings peace, strength and protection.",
+      "significance_telugu": "Shivunki sampardhinche gudu mantramu. Shanthi, shakti, rakshana istundi.",
+      "age_minimum": 2
+    },
+    {
+      "name": "Gayatri Mantra",
+      "telugu_name": "గాయత్రీ మంత్రం",
+      "lines": [
+        {
+          "line_number": 1,
+          "text": "Om Bhur Bhuva Swaha",
+          "telugu_text": "ఓం భూర్భువస్సువః",
+          "meaning_english": "We meditate on the earth, sky and heaven",
+          "meaning_telugu": "Bhoomi, aakasam, swargam gurinchi dhyanisthamu"
+        },
+        {
+          "line_number": 2,
+          "text": "Tat Savitur Varenyam",
+          "telugu_text": "తత్సవితుర్వరేణ్యం",
+          "meaning_english": "We meditate on the divine light of the Sun",
+          "meaning_telugu": "Suryanudi divya prakaasam gurinchi dhyanisthamu"
+        },
+        {
+          "line_number": 3,
+          "text": "Bhargo Devasya Dhimahi",
+          "telugu_text": "భర్గో దేవస్యధీమహి",
+          "meaning_english": "May the divine light illuminate our minds",
+          "meaning_telugu": "Aa divya jyoti manamu manossu prakashimpajeyali"
+        },
+        {
+          "line_number": 4,
+          "text": "Dhiyo Yo Nah Prachodayat",
+          "telugu_text": "ధియో యోనః ప్రచోదయాత్",
+          "meaning_english": "May it inspire our wisdom and intellect",
+          "meaning_telugu": "Manam manchi alochanalu chesukune shakti ivvali"
+        }
+      ],
+      "significance_english": "The most sacred Vedic mantra. Gayatri mantra is a prayer for wisdom, knowledge and enlightenment.",
+      "significance_telugu": "Anni vedhika mantraalalo mokhyamainadhi. Gnaanam, vivekam kosam chesukune praarthana.",
+      "age_minimum": 4
+    },
+    {
+      "name": "Telugu Lullaby",
+      "telugu_name": "తెలుగు లాలి పాట",
+      "lines": [
+        {
+          "line_number": 1,
+          "text": "Lali Lali Lali",
+          "telugu_text": "లాలి లాలి లాలి",
+          "meaning_english": "Sleep my dear child",
+          "meaning_telugu": "Nidra poru naa babu"
+        },
+        {
+          "line_number": 2,
+          "text": "Nidra Poru Naa Babu",
+          "telugu_text": "నిద్ర పోరు నా బాబు",
+          "meaning_english": "Sleep peacefully my little one",
+          "meaning_telugu": "Haaigaa nidra poru"
+        },
+        {
+          "line_number": 3,
+          "text": "Lali Lali Lali",
+          "telugu_text": "లాలి లాలి లాలి",
+          "meaning_english": "Sweet dreams my child",
+          "meaning_telugu": "Manchhi kalualu kaanumu"
+        }
+      ],
+      "significance_english": "Traditional Telugu lullaby sung to put children to sleep. Very soothing and calming.",
+      "significance_telugu": "Pillalanu nidra poinchadaaniki padhe parampara Telugu laali paata.",
+      "age_minimum": 1
+    }
+  ]
+}
